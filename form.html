@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro Completo</title>
+    <link rel="stylesheet" href="../EcoFood/Css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Empresa ou ONG</h1>
+        <form id="cadastro-form" action="../EcoFood/php/processa_form.php" method="POST">
+
+
+            <!-- Seção de Empresa/ONG -->
+            <fieldset>
+                <legend>Informações da Empresa/ONG</legend>
+
+                <div class="form-group">
+                    <label for="nome-fantasia">Nome Fantasia</label>
+                    <input type="text" id="nome_fantasia" name="nome_fantasia" required placeholder="Nome Fantasia">
+                </div>
+
+                <div class="form-group">
+                    <label for="razao-social">Razão Social</label>
+                    <input type="text" id="razao_social" name="razao_social" required placeholder="Razão Social">
+                </div>
+
+                <div class="form-group">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" name="cnpj" required placeholder="Digite o CNPJ">
+                    <span id="cnpj-message" class="message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-empresa">Tipo de Empresa</label>
+                    <select id="tipo-empresa" name="tipo_empresa" required>
+                        <option value="">Selecione o tipo</option>
+                        <option value="1">Doadora</option>
+                        <option value="2">Receptora</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <!-- Seção de Endereço -->
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <div class="form-group">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro" required placeholder="Digite o logradouro">
+                </div>
+
+                <div class="form-group">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero" required placeholder="Número">
+                </div>
+
+                <div class="form-group">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Complemento (Opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" required placeholder="Bairro">
+                </div>
+
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" required placeholder="CEP">
+                </div>
+
+                <div class="form-group">
+                    <label for="municipio">Município</label>
+                    <input type="text" id="municipio" name="municipio" required placeholder="Município">
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" required placeholder="Estado (Ex: SP)">
+                </div>
+            </fieldset>
+
+            <!-- Seção de Contato -->
+            <fieldset>
+                <legend>Contato</legend>
+
+                <div class="form-group">
+                    <label for="ddd">DDD</label>
+                    <input type="text" id="ddd" name="ddd" required placeholder="DDD">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="XXXX-XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+            </fieldset>
+
+            <!-- Seção de Login -->
+            <fieldset>
+                <legend>Informações de Login</legend>
+
+                <div class="form-group">
+                    <label for="login-cnpj">CNPJ</label>
+                    <input type="text" id="login-cnpj" name="login-cnpj" required placeholder="Digite o CNPJ">
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-senha">Confirmar Senha</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" required placeholder="Confirme sua senha">
+                </div>
+            </fieldset>
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="submit-btn">Cadastrar</button>
+        </form>
+    </div>
+
+   <!-- <script src="../EcoFood/js/form.js"></script> -->
+</body>
+</html>

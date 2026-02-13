@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Doações</title>
+    <link rel="stylesheet" href="../EcoFood/Css/dashboardmercado.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="menu-item active" data-page="doacao">Fazer Doação</a></li>
+                <li><a href="#" class="menu-item" data-page="selecao-ong">Selecionar ONG</a></li>
+                <li><a href="#" class="menu-item" data-page="confirmacao">Confirmar Envio</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <div class="content">
+            <!-- Página de Doação -->
+            <section id="doacao" class="page active">
+                <h2>Informações da Doação</h2>
+                <form id="form-doacao" action="../EcoFood/php/processa_doacao.php" method="POST">
+                    <label for="produto">Produto:</label>
+                    <input type="text" id="produto" name="produto" placeholder="Nome do Produto" required>
+
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade" required>
+
+                    <label for="validade">Data de Validade:</label>
+                    <input type="date" id="validade" name="validade" required>
+                    
+                    <button type="submit" class="submit-btn">Incluir</button>
+                </form>
+
+                <h3>Lista de Produtos Doados</h3>
+                <ul id="lista-doacoes" class="lista-doacoes"></ul>
+            </section>
+
+            <!-- Página de Seleção de ONG -->
+            <section id="selecao-ong" class="page">
+                <h2>Selecione a ONG Receptora</h2>
+                    <div class="ong-container">
+                        <div class="ong-card" data-ong="ONG 1">
+                            <div class="ong-info">
+                                <h3>ONG 1</h3>
+                                <p>Apoiando famílias em situação de vulnerabilidade</p>
+                            </div>
+                            <div class="ong-icon"></div>
+                        </div>
+
+                        <div class="ong-card" data-ong="ONG 2">
+                            <div class="ong-info">
+                                <h3>ONG 2</h3>
+                                <p>Distribuição de alimentos para moradores de rua</p>
+                            </div>
+                            <div class="ong-icon"></div>
+                        </div>
+
+                        <div class="ong-card" data-ong="ONG 3">
+                            <div class="ong-info">
+                                <h3>ONG 3</h3>
+                                <p>Educação para crianças carentes</p>
+                            </div>
+                            <div class="ong-icon"></div>
+                        </div>
+
+                        <div class="ong-card" data-ong="ONG 4">
+                            <div class="ong-info">
+                                <h3>ONG 4</h3>
+                                <p>Resgate de animais abandonados</p>
+                            </div>
+                            <div class="ong-icon"></div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Página de Confirmação de Envio -->
+            <section id="confirmacao" class="page">
+                <h2>Confirmar Envio</h2>
+                <p>Confirme os detalhes antes de enviar a doação.</p>
+                <!-- Detalhes de confirmação serão adicionados aqui -->
+            </section>
+        </div>
+    </div>
+
+    <script src="../EcoFood/js/dashboardmercado.js"></script>
+</body>
+</html>
