@@ -1,0 +1,285 @@
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  
+  
+  h1{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-align: left;
+    margin-left: 38px;
+    margin-top: 22px;
+    padding: 11px;
+  }
+  
+  #letreiro{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faixa{
+    width: 1409px;
+    height: 144px;
+    background-color: rgb(2, 139, 64);
+    text-align: left;
+    margin-top: -10px;
+  }
+  
+  .menu{
+    display: flex;
+    margin-right: 36px;
+    float: right;
+    margin-top: -56px;
+    font-size: 22px;
+  }
+  
+  nav li{
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  h2{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin-top: -35px;
+  }
+  
+  p2{
+    color: white;
+    font-size: 20px;
+    margin-left: 116px
+  
+  }
+  
+  .title1{
+    color: white;
+    margin-left: 839px;
+    padding: 0px;
+    margin-top: 70px;
+    float: left;
+  }
+  
+  p3{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  h4{
+    color: rgb(255 255 255);
+    font-size: 37px;
+    padding: 0px;
+    float: left;
+    margin-left: 233px;
+    margin-top: 47px;
+  }
+  
+  p4{
+    color: rgb(255 255 255);
+    font-size: 23px;
+    text-align: center;
+    margin-left: -481px;
+    margin-top: 135px;
+    float: left;
+  }
+  
+  .hero{
+    background-repeat: no-repeat;
+    background-image: url(../img/ECOFOOD.jpg);
+    color: #ffffff;
+    height: 48%;
+    padding: 366px;
+    background-size: cover;
+    margin-top: -87px;
+  }
+  
+  .cta-button1{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color:rgb(2, 139, 64);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: -78px;
+    margin-left: 293px;
+    margin-top: 33px;
+  }
+  
+  .cta-button2{
+    background-color: rgb(255, 255, 255);
+    color:rgb(2, 139, 64);
+    padding: 17px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    float:left;
+    margin-left: -441px;
+    margin-top: 239px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .img4{
+    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/fotos-gratis/equipe-de-teletrabalhadores-trabalhando-no-escritorio-escuro_74855-4744.jpg");
+    background-size: contain;
+    padding: 212px;
+    float: left;
+    margin-top: -159px;
+    margin-left: 846px;
+    border-radius: 30px;
+  }
+  
+  
+  /*.contact{
+    color: rgba(10, 19, 193, 0.6);
+    text-align: left;
+    padding: 144px;
+  }*/
+  
+  h3{
+    color: rgb(2, 139, 64);
+    font-size: 45px;
+    margin-left: 484px;
+    padding: 0px;
+    margin-top: 70px;
+    float: left;
+  }
+  
+  p3{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 586px;
+    float: left;
+    margin-top: -20px;
+  }
+  
+  
+  .sobre1{
+    color: rgb(68 10 193);
+    font-size: 27px;
+    margin: 24px;
+    padding: 0px;
+    margin-left: -911px;
+    margin-top: -113px;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .img1{
+    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/vetores-premium/caminhao-de-reboque-para-falhas-de-transporte-e-carros-de-emergencia-vector-illustration_110233-712.jpg");
+    background-size: contain;
+    padding: 111px;
+    float: left;
+    margin-top: -206px;
+    margin-left: 997px;
+  }
+  
+  .sobre2{
+    color: rgb(68 10 193);
+    font-size: 27px;
+    margin: 24px;
+    padding: 0px;
+    margin-left: 8px;
+    margin-top: -56px;
+    text-align: center;
+    list-style-type:none;
+  }
+  
+  .img2{
+    background-repeat: no-repeat;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/018/926/133/original/car-thief-flat-color-icon-png.png");
+    background-size: contain;
+    padding: 85px;
+    float: left;
+    margin-top: -196px;
+    margin-left: 558px;
+  }
+  
+  .sobre3{
+    color: rgb(68 10 193);
+    font-size: 27px;
+    margin: 24px;
+    padding: 0px;
+    margin-left: 917px;
+    margin-top: -56px;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .img3{
+    background-repeat: no-repeat;
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/19500211-acidente-de-transito-de-colisao-de-carro-com-limitador-de-estrada-vetor.jpg");
+    background-size: contain;
+    padding: 139px;
+    float: left;
+    margin-top: -192px;
+    margin-left: 47px;
+  }
+  
+  .quadrado{
+      width: 1409px;
+      height: 399px;
+      background-color: rgb(2, 139, 64);
+      text-align: left;
+      margin-top: 0px;
+  }
+  
+  img{
+    background-repeat: no-repeat;
+    width: 446px;
+    float: left;
+    margin-left: 77px;
+    margin-top: -212px;
+    border-radius: 30px;
+    padding: 0px
+  }
+  
+  
+  .comeco{
+    width: 100%;
+    height: 396px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  
+  #quadrados{
+    float: right;
+  }
+  
+  .bloco1{
+    width: 1409px;
+    height: 446px;
+    background-color: rgb(2, 139, 64);
+    text-align: center;
+    margin-top:153px;
+    margin-left: 0px;
+  }
+  
+  .fim{
+    float: left;
+    color:rgb(52, 247, 140);
+    text-align: center;
+    margin-left: 483px;
+    margin-top: -20px;
+  }
+  
+  footer{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+  }

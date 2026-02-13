@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+ body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Remove qualquer barra de rolagem horizontal */
+}
+
+
+html {
+  height: 500vh;
+  background-color: #57bd9e;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+
+header {
+  width: 100%;
+  padding: 10px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: 1s;
+}
+
+header.rolagem {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+header.rolagem a {
+  color: #57bd9e;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 1s;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 74px;
+  top: 5px;
+  left: 101px;
+  position: relative;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+header ul li {
+  margin: 0px 20px;
+}
+
+header ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  left: -467px;
+  top: 30px;
+  text-align: center;
+  position: relative;
+  font-size: 21px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.5s ease; /* Animação de rotação */
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(../img/ECOFOOD\ \(1\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.banner h1 {
+  font-size: 125px !important;
+  color: #ffffff;
+}
+
+.banner h1 span {
+  color: #57bd9e;
+}
+
+.btnlogin {
+  width: 134px;
+  height: 45px;
+  border: 0;
+  background-color: #006d46;
+  color: #ffffff;
+  cursor: pointer;
+  transition: .2s;
+  border-radius: 13px;
+  right: -153px;
+  top: -4px;
+  position: relative;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #006d46;
+  padding: 10px;
+  text-align: center;
+}
+
+.card{
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #006d46 ;
+  position: relative;
+  left: 188px;
+  top: 167px;
+}
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.card-body{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #06181291;
+  backdrop-filter: blur(5px);
+  border-radius: 9px;
+  color: #ffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card:hover .card-body{
+  right: 0;
+}
+
+.card-title{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.card-sub-title{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card_info{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.card-1{
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #006d46;
+  position: relative;
+  left: 798px;
+  top: -334px;
+}
+
+.card-img-1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.card-body-1{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #06181291;
+  backdrop-filter: blur(5px);
+  border-radius: 9px;
+  color: #ffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-1:hover .card-body-1{
+  right: 0;
+}
+
+.card-title-1{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.card-sub-title-1{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-info-1{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.card-2{
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #006d46;
+  position: relative;
+  left: 1397px;
+  top: -833px;
+}
+
+.card-img-2{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.card-body-2{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #06181291;
+  backdrop-filter: blur(5px);
+  border-radius: 9px;
+  color: #ffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-2:hover .card-body-2{
+  right: 0;
+}
+
+.card-title-2{
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.card-sub-title-2{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-info-2{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.grupo1{
+  position: relative;
+  top: 61px;
+}
+
+.sobre-title {
+  font-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.sobre-sub-title {
+  font-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+#ecofood{
+  background: #ffff;
+  width: 2022px;
+  height: 1504px;
+  position: relative;
+  top: -663px;
+}
+
+
+.card-3{
+  width: 489px;
+  height: 499px;
+  overflow: hidden;
+  position: relative;
+  left: 1340px;
+  top: 142px;
+}
+
+.sobre-title-ecofood {
+  font-size: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -402px;
+  right: 289px;
+}
+
+.text-ecofood {
+  font-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: 'Montserrat', 'Arial Narrow';
+  color: #000000;
+  position: relative;
+  top: -334px;
+  right: 287px;
+}
+
+#carrossel {
+  width: 2054px;
+    overflow: hidden;
+    position: relative;
+    top: -1221px;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrossel-div {
+  display: flex;
+  width: calc(100% * 2); /* Duplicar o tamanho total para efeito de rotação contínua */
+  animation: scroll 20s linear infinite; /* Animação para rolar o carrossel */
+}
+
+.slide {
+  flex: 0 0 10%; /* Cada slide ocupa 10% da largura do carrossel-div */
+  box-sizing: border-box; /* Inclui padding e border na largura */
+  margin-right: 20px; /* Espaçamento entre as imagens */
+}
+
+img {
+  width: 100%; /* Ajusta a imagem para ocupar 100% da largura do slide */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Ajusta para mover o carrossel completamente para fora da vista */
+  }
+}
+
+.carrossel-parceiros {
+  font-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -1350px;
+  right: 68px;
+}
+
+#contato{
+  display: flex;
+    position: relative;
+    top: -249px;
+    left: 1187px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #006d47a9;
+    border-radius: 10px;
+    width: 607px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+#contato h2{
+  color: #000000 ;
+  font-size: 2.5rem;
+  margin: 2.5rem;
+}
+
+#contato form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label{
+  color: #000000;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+form input{
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+form input:focus{
+  border-radius: 16px;
+}
+
+form textarea{
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+form textarea:focus{
+  border-radius: 16px;
+}
+
+form button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #000000;
+  margin-bottom: 20px;
+  transition: all 0.1s;
+}
+
+form button:hover{
+  border-radius: 16px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.title-contato{
+  font-size: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: 61px;
+  right: 0px;
+}
+
+.text-contato {
+  font-size: 54px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: 315px;
+  right: 381px;
+}
+
+.card-img-3{
+  width: 806px;
+  position: relative;
+  height: 529px;
+  object-fit: cover;
+  border: 6px solid #006d46;
+  border-radius: 9px;
+  top: -621px;
+  left: 91px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+.text-suporte {
+  font-size: 49px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -1149px;
+  left: 453px;
+}
+
+.title-suporte{
+  font-size: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -879px;
+  right: 0px;
+}
+
+
+.card-img-4{
+  width: 793px;
+    position: relative;
+    height: 552px;
+    object-fit: cover;
+    border-radius: 9px;
+    border: 6px solid #006d46;
+    top: -783px;
+    left: 1124px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+.text-suporte1 {
+  font-size: 49px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -1298px;
+  left: -406px;
+}
+
+.text-suporte2 {
+  font-size: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -769px;
+  right: 15px;
+}
+
+.title-suporte1{
+  font-size: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  position: relative;
+  top: -879px;
+  right: 0px;
+}
+

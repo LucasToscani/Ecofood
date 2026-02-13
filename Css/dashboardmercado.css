@@ -1,0 +1,185 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Estilos do Container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    min-height: 100vh;
+    padding-top: 40px;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+    border-radius: 0 30px 30px 0;
+}
+
+/* Conteúdo Principal */
+.content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 14px;
+    color: #555;
+}
+
+form input,
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2575fc;
+}
+
+/* Esconder outras páginas por padrão */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Estilos para a seção de Seleção de ONG */
+.ong-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.ong-card {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ong-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ong-info h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.ong-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+.ong-card.active {
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 6px 12px rgba(0, 128, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.ong-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Lista de Doações */
+.lista-doacoes {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-doacoes li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-doacoes .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista-doacoes .delete-btn:hover {
+    background-color: #c0392b;
+}
