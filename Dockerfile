@@ -6,6 +6,9 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 # Habilita mod_rewrite (útil se o projeto usa URLs amigáveis)
 RUN a2enmod rewrite
 
+# Corrige conflito de MPM: garante que só o prefork (necessário para mod_php) fica ativo
+RUN a2dismod mpm_event mpm_worker 2>/dev/null; a2enmod mpm_prefork
+
 # Copia o código do projeto para dentro do container
 COPY . /var/www/html/
 
